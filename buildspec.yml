@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: 0.2
 
 phases:
@@ -7,10 +6,12 @@ phases:
       nodejs: 14
     commands:
       - npm install
+
   build:
     commands:
       - echo Build started on `date`
       - npm run build
+
   post_build:
     commands:
       - echo Build completed on `date`
@@ -18,24 +19,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-=======
-version: 0.2
-
-phases:
-  install:
-    runtime-versions:
-      nodejs: 14
-    commands:
-      - npm install
-  build:
-    commands:
-      - echo Build started on `date`
-      - npm run build
-  post_build:
-    commands:
-      - echo Build completed on `date`
-
-artifacts:
-  files:
-    - '**/*'
->>>>>>> 9ba42cc246f28f2624bc7d179857d3adfe4dfb2d
